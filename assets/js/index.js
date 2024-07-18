@@ -143,27 +143,179 @@ $(document).ready(function () {
   addTitleToLinks();
   
   
+   $(document).ready(function(){
+
+      $("#choix1").click(function(){
+           $(this).addClass("active");
+			$("#choix2").removeClass("active");
+			$("#choix3").removeClass("active");
+			$("#choix4").removeClass("active");
+			$("#choix5").removeClass("active");
+			$("#choix6").removeClass("active");
+			$("#choix7").removeClass("active");
+			$("#choix8").removeClass("active");
+
+           $("#contenu1").fadeIn(1000);
+			$("#contenu2").fadeOut(1000);
+			$("#contenu3").fadeOut(1000);
+			$("#contenu4").fadeOut(1000);
+			$("#contenu5").fadeOut(1000);
+			$("#contenu6").fadeOut(1000);
+			$("#contenu7").fadeOut(1000);
+			$("#contenu8").fadeOut(1000);
+       });
+
+        $("#choix2").click(function(){
+           $(this).addClass("active");
+			$("#choix1").removeClass("active");
+			$("#choix3").removeClass("active");
+			$("#choix4").removeClass("active");
+			$("#choix5").removeClass("active");
+			$("#choix6").removeClass("active");
+			$("#choix7").removeClass("active");
+			$("#choix8").removeClass("active");
+
+           $("#contenu2").fadeIn(1000);
+           $("#contenu1").fadeOut(1000);
+           $("#contenu3").fadeOut(1000);
+			$("#contenu4").fadeOut(1000);
+			$("#contenu5").fadeOut(1000);
+			$("#contenu6").fadeOut(1000);
+			$("#contenu7").fadeOut(1000);
+			$("#contenu8").fadeOut(1000);
+         
+       });
+         $("#choix3").click(function(){
+           $(this).addClass("active");
+           $("#choix1").removeClass("active");
+           $("#choix2").removeClass("active");
+           $("#choix4").removeClass("active");
+			$("#choix5").removeClass("active");
+			$("#choix6").removeClass("active");
+			$("#choix7").removeClass("active");
+			$("#choix8").removeClass("active");
+
+           $("#contenu3").fadeIn(1000);
+           $("#contenu1").fadeOut(1000);
+           $("#contenu2").fadeOut(1000);
+			$("#contenu4").fadeOut(1000);
+			$("#contenu5").fadeOut(1000);
+			$("#contenu6").fadeOut(1000);
+			$("#contenu7").fadeOut(1000);
+			$("#contenu8").fadeOut(1000);
+         
+       });
 
 
-  $(document).ready(function () {
-    $('.tabs_ul li:first-child').addClass('active');
-    $('.tab-content .tab-pane:first-child').addClass('in active');
+          $("#choix4").click(function(){
+           $(this).addClass("active");
+           $("#choix1").removeClass("active");
+           $("#choix2").removeClass("active");
+           $("#choix3").removeClass("active");
+			$("#choix5").removeClass("active");
+			$("#choix6").removeClass("active");
+			$("#choix7").removeClass("active");
+			$("#choix8").removeClass("active");
 
-    $('.tabs_ul a').on('click', function (e) {
-        e.preventDefault();
-        var $this = $(this);
-    
-        $('.tabs_ul .active').removeClass('active');
-        $this.parent().addClass('active');
-    
-        $('.tab-content .tab-pane').removeClass('in active');
-        var target = $this.attr('href');
-        $(target).addClass('in active');
-    });
-});
-  
-  
-  
+           $("#contenu4").fadeIn(1000);
+           $("#contenu1").fadeOut(1000);
+           $("#contenu2").fadeOut(1000);
+			$("#contenu3").fadeOut(1000);
+			$("#contenu5").fadeOut(1000);
+			$("#contenu6").fadeOut(1000);
+			$("#contenu7").fadeOut(1000);
+			$("#contenu8").fadeOut(1000);
+         
+       });
+
+         $("#choix5").click(function(){
+           $(this).addClass("active");
+           $("#choix1").removeClass("active");
+           $("#choix2").removeClass("active");
+           $("#choix3").removeClass("active");
+			$("#choix4").removeClass("active");
+			$("#choix6").removeClass("active");
+			$("#choix7").removeClass("active");
+			$("#choix8").removeClass("active");
+
+           $("#contenu5").fadeIn(1000);
+           $("#contenu1").fadeOut(1000);
+           $("#contenu2").fadeOut(1000);
+			$("#contenu3").fadeOut(1000);
+			$("#contenu4").fadeOut(1000);
+			$("#contenu6").fadeOut(1000);
+			$("#contenu7").fadeOut(1000);
+			$("#contenu8").fadeOut(1000);
+         
+       });
+
+
+         $("#choix6").click(function(){
+           $(this).addClass("active");
+           $("#choix1").removeClass("active");
+           $("#choix2").removeClass("active");
+           $("#choix3").removeClass("active");
+			$("#choix4").removeClass("active");
+			$("#choix5").removeClass("active");
+			$("#choix7").removeClass("active");
+			$("#choix8").removeClass("active");
+
+           $("#contenu6").fadeIn(1000);
+           $("#contenu1").fadeOut(1000);
+           $("#contenu2").fadeOut(1000);
+			$("#contenu3").fadeOut(1000);
+			$("#contenu4").fadeOut(1000);
+			$("#contenu5").fadeOut(1000);
+			$("#contenu7").fadeOut(1000);
+			$("#contenu8").fadeOut(1000);
+         
+       });
+
+
+           $("#choix7").click(function(){
+           $(this).addClass("active");
+           $("#choix1").removeClass("active");
+           $("#choix2").removeClass("active");
+           $("#choix3").removeClass("active");
+			$("#choix4").removeClass("active");
+			$("#choix5").removeClass("active");
+			$("#choix6").removeClass("active");
+			$("#choix8").removeClass("active");
+
+           $("#contenu7").fadeIn(1000);
+           $("#contenu1").fadeOut(1000);
+           $("#contenu2").fadeOut(1000);
+			$("#contenu3").fadeOut(1000);
+			$("#contenu4").fadeOut(1000);
+			$("#contenu5").fadeOut(1000);
+			$("#contenu6").fadeOut(1000);
+			$("#contenu8").fadeOut(1000);
+         
+       });
+
+           $("#choix8").click(function(){
+           $(this).addClass("active");
+           $("#choix1").removeClass("active");
+           $("#choix2").removeClass("active");
+           $("#choix3").removeClass("active");
+			$("#choix4").removeClass("active");
+			$("#choix5").removeClass("active");
+			$("#choix6").removeClass("active");
+			$("#choix7").removeClass("active");
+
+           $("#contenu8").fadeIn(1000);
+           $("#contenu1").fadeOut(1000);
+           $("#contenu2").fadeOut(1000);
+			$("#contenu3").fadeOut(1000);
+			$("#contenu4").fadeOut(1000);
+			$("#contenu5").fadeOut(1000);
+			$("#contenu6").fadeOut(1000);
+			$("#contenu7").fadeOut(1000);
+         
+       });
+
+  });
+
 
   
   $(document).ready(function(){
